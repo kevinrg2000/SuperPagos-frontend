@@ -25,6 +25,18 @@ const Inicio =  () =>{
     getAlbum();
   }, []);
 
+
+  const words = (word) => {
+
+    if(word == "sells") return "vende"; 
+    else if(word == "charge") return "cargar";
+    else if(word == "credits") return "creditos";
+    else if(word == "marketplace") return "mercado";
+    else if(word == "payments") return "pagos";
+    else if(word == "link") return "enlace";
+    else if(word == "withdrawal") return "retiro";
+  }
+
   return (
     <div className=" h-full w-full ">
       <div className=" font-bold text-4xl m-4">Seleccione un producto</div>
@@ -39,7 +51,7 @@ const Inicio =  () =>{
                     setModulo(modulo);
                   }}
                 >
-                  {modulo.name}
+                  {words(modulo?.name)}
                 </button>
               </li>
             );
