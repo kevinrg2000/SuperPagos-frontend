@@ -75,10 +75,12 @@ const Inicio =  () =>{
 
                       {subCategorias?.products?.map((producto) => {
                         return(
-                          
-                          <button className="flex flex-wrap m-4 w-10 h-10">
+                          <div className=" bg-white m-5 w-32 h-16 rounded-xl">
+
+                          <button className="flex flex-wrap mt-3 ml-10 w-10 h-10 content-center items-center">
                             <img className=" w-10 h-auto flex "src={ `https://assets.refacil.co/providers/${producto.image}`} />
                             </button>
+                          </div>
                       )})}
                       </div>
                     </div>
